@@ -1,0 +1,69 @@
+/* Constants */
+:root {
+    --black: #000000;
+    --white: #000000;
+    --red:   #FF0000;
+    --light: #FFF0F0;
+    --dark:  #222F42;
+}
+
+/* Tag Styles */
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: red;
+}
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: var(--bg);
+}
+ul {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+li {
+    list-style: circle;
+}
+
+/* Class Styles */
+.light-theme {
+    --bg: var(--light);
+    --fontColor: var(--dark);
+    --btnBg: var(--dark);
+    --btnFontColor: var(--light);
+}
+.dark-theme {
+    --bg: var(--dark);
+    --fontColor: var(--light);
+    --btnBg: var(--light);
+    --btnFontColor: var(--dark);
+}
+
+.list {
+    list-style: square;
+}
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+.btn:focus {
+    outline-style: none;
+}
+
+/* ID Styles */
+#msg {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+/* General */
+* {
+    color: var(--fontColor);
+    font-family: Arial, Helvetica, sans-serif;
+}
